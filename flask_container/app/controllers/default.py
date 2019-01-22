@@ -9,5 +9,5 @@ def jamelli():
     return "gosta de pizza"
 
 @app.route("/quantidade/<nome>/<qtd>")
-def pizza:
+def pizza():
     return nome+" gosta de comer "+qtd
