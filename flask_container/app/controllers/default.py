@@ -4,3 +4,10 @@ from app import app
 def index():
     return "opa"
 
+@app.route("/jamelli")
+def jamelli():
+    return "gosta de pizza"
+
+@app.route("/quantidade/<nome>/<qtd>")
+def pizza:
+    return nome+" gosta de comer "+qtd
