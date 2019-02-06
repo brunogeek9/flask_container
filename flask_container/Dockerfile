@@ -1,13 +1,9 @@
-FROM python:2.7-slim
+FROM python:3.4-alpine
 
-WORKDIR /app
+ADD . /code
 
-#COPY . /app
+WORKDIR /code
 
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
-
-EXPOSE 80
-
-ENV NAME World
+RUN pip install -r requirements.txt
 
 CMD ["python", "run.py"]
