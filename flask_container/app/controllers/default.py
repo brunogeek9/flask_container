@@ -6,7 +6,7 @@ def index():
 
 @app.route("/jamelli")
 def jamelli():
-    return "gosta de espinafre"
+    return "gosta de arroz"
 
 @app.route("/quantidade/<nome>/<qtd>")
 def pizza(nome,qtd):
