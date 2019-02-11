@@ -1,5 +1,5 @@
 Flask
 Redis
-Flask-sqlalchemy
+Flask-sqlalchemy==2.3
 Flask-migrate
 Flask-script
