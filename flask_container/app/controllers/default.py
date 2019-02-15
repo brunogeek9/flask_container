@@ -2,7 +2,7 @@ from app import app
 
 @app.route("/")
 def index():
-    return "Bem vindo"
+    return "<h1> Bem vindo </h1>"
 
 @app.route("/quantidade/<nome>/<qtd>")
 def pizza(nome,qtd):
@@ -16,4 +16,4 @@ def puppy(name):
     else:
         new_name = name.replace("y","iful")
 
-    return "o nome do doginho é {} e em latin o seu nome é {}".format(name,new_name)
+    return "o nome do doginho é {} e em latin o seu nome é {} tata".format(name,new_name)
